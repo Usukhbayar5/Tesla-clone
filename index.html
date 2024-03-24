@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0;
+      font-family: Montserrat;
+    }
+
+    header {
+      height: 56px;
+      display: flex;
+      align-items: center;
+      gap: 575px;
+      position: fixed;
+    }
+
+    .menu-item {
+      text-decoration: none;
+      color: white;
+      margin-left: 32px;
+    }
+
+    button {
+      height: 40px;
+      width: 264px;
+      border: none;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .model-title {
+      font-size: 40px;
+      font-weight: 500;
+      color: #fff;
+
+    }
+
+    #btn-white {
+      background: rgba(244, 244, 244, 0.8);
+      backdrop-filter: blur(4px);
+      color: black;
+    }
+
+    #btn-black {
+      background: rgba(23, 26, 32, 0.65);
+      backdrop-filter: blur(4px);
+      color: #FFFFFF;
+    }
+
+    .desc {
+      padding-top: 128px;
+      text-align: center;
+      color: #fff;
+    }
+    
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .btn-container {
+      display: flex;
+      gap: 24px;
+    }
+
+    #section-1 {
+      background-image: url(./1.jpeg);
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #section-2 {
+      background-image: url(./2.png);
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #section-3 {
+      background-image: url(./4.png);
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #section-4 {
+      background-image: url(./5.png);
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #section-5 {
+      background-image: url(./3.png);
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #section-6 {
+      background-image: url(./11.webm);
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #section-7 {
+      background-image: url(./8.png);
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #section-8 {
+      background-image: url(./9.png);
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #section-9 {
+      background-image: url(./7.png);
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #section-10 {
+      background-image: url(./6.png);
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  </style>
+  <title>Tesla clone</title>
+</head>
+
+<body>
+  <header>
+    <img src="./Tesla Logo.png" alt="Tesla logo" id="logo" />
+    <span id="menus">
+      <a class="menu-item" href="#section-1"> Vehicles </a>
+      <a class="menu-item" href="#section-2"> Energy </a>
+      <a class="menu-item" href="#section-3"> Charging </a>
+      <a class="menu-item" href="#section-4"> Discover </a>
+      <a class="menu-item" href="#section-5"> Shop </a>
+      <section>
+
+    </span>
+  </header>
+  <section id="section-1">
+    <div class="desc">
+      <h1 class="model-title">Model Y</h1>
+      <p class="model-price">From $31,890*</p>
+      <p class="model-p"> After Federal Tax Credit & Est. Gas Savings</p>
+    </div>
+    <div class="content">
+      <div class="btn-container">
+        <button id="btn-white">Shop Available</button>
+        <button id="btn-black">Demo Drive</button>
+      </div>
+      <span>Price before incentives and savings is $42,990, excluding taxes and
+        fees. Subject to change.
+        <br>
+        <a>Learn about est. gas savings.</a>
+      </span>
+    </div>
+  </section>
+  <section id="section-2">
+    <div class="desc">
+      <h1 class="model-title">Brand New Model 3</h1>
+      <p class="model-price">Lease starting at $329/mo*</p>
+      <p class="model-p"></p>
+  </div>
+    <div class="content">
+      <div class="btn-container">
+        <button id="btn-white">Custom Order</button>
+        <button id="btn-black">Demo Drive</button>
+      </div>
+      <span>*Excludes taxes and fees with price subject to change. Available in select states.
+        <br>
+        <a>See Details</a>
+      </span>
+    </div>
+  </section>
+  <section id="section-3">
+    <div class="desc">Model X</div>
+    <div class="content">
+      <div class="btn-container">
+        <button id="btn-white">Custom Order</button>
+        <button id="btn-black">Demo Drive</button>
+      </div>
+      <span>Price before incentives and savings is $79,990, excluding taxes and
+        fees. Subject to change.
+        <br>
+        <a>Learn about est. gas savings.</a>
+      </span>
+    </div>
+  </section>
+  </section>
+  <section id="section-4">
+    <div class="desc">Model S</div>
+    <div class="content">
+      <div class="btn-container">
+        <button id="btn-white">Custom Order</button>
+        <button id="btn-black">Demo Drive</button>
+      </div>
+      <span>Price before incentives and savings is $74,990, excluding taxes and
+        fees. Subject to change.
+        <br>
+        <a>Learn about est. gas savings.</a>
+      </span>
+    </div>
+  </section>
+  </section>
+  <section id="section-5">
+    <div class="desc"></div>
+    <div class="content">
+      <div class="btn-container">
+        <button id="btn-white">Shop Available</button>
+        <button id="btn-black">Demo Drive</button>
+      </div>
+      <span>Price before incentives and savings is $42,990, excluding taxes and
+        fees. Subject to change.
+        <br>
+        <a>Learn about est. gas savings.</a>
+      </span>
+    </div>
+  </section>
+  <section id="section-6">
+    <div class="desc"></div>
+    <div class="content">
+      <div class="btn-container">
+        <button id="btn-white">Order Now</button>
+        <button id="btn-black">Demo Drive</button>
+      </div>
+      <span>Price before incentives and savings is $42,990, excluding taxes and
+        fees. Subject to change.
+        <br>
+        <a>Learn about est. gas savings.</a>
+      </span>
+    </div>
+  </section>
+  </section>
+  <section id="section-7">
+    <div class="desc">Solar Panels</div>
+    <div class="content">
+      <div class="btn-container">
+        <button id="btn-white">Order Now</button>
+        <button id="btn-black">Demo Drive</button>
+      </div>
+      <span>Price before incentives and savings is $42,990, excluding taxes and
+        fees. Subject to change.
+        <br>
+        <a>Learn about est. gas savings.</a>
+      </span>
+    </div>
+  </section>
+  </section>
+  <section id="section-8">
+    <div class="desc">Solar Roof</div>
+    <div class="content">
+      <div class="btn-container">
+        <button id="btn-white">Order Now</button>
+        <button id="btn-black">Demo Drive</button>
+      </div>
+      <span>Price before incentives and savings is $42,990, excluding taxes and
+        fees. Subject to change.
+        <br>
+        <a>Learn about est. gas savings.</a>
+      </span>
+    </div>
+  </section>
+  </section>
+  <section id="section-9">
+    <div class="desc">Powerwall</div>
+    <div class="content">
+      <div class="btn-container">
+        <button id="btn-white">Order Now</button>
+        <button id="btn-black">Demo Drive</button>
+      </div>
+      <span>Price before incentives and savings is $42,990, excluding taxes and
+        fees. Subject to change.
+        <br>
+        <a>Learn about est. gas savings.</a>
+      </span>
+    </div>
+  </section>
+  </section>
+  <section id="section-10">
+    <div class="desc">Accessories</div>
+    <div class="content">
+      <div class="btn-container">
+        <button id="btn-white">Shop Now</button>
+      </div>
+      <span>Price before incentives and savings is $42,990, excluding taxes and
+        fees. Subject to change.
+        <br>
+        <a>Learn about est. gas savings.</a>
+      </span>
+    </div>
+  </section>
+</body>
+
+</html>
